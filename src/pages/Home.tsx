@@ -50,7 +50,7 @@ const Home = () => {
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <motion.img
-            src="/public/lovable-uploads/LA 5 (1).jpg"
+            src="/public/lovable-uploads/hero.jpg"
             alt="Fashion Hero"
             className="w-full h-full object-cover"
             initial={{ scale: 1.1 }}
