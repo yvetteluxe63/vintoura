@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 231 52% 8%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 231 52% 8%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 231 52% 8%;
+
+    --primary: 231 52% 8%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 269 24% 82%;
+    --secondary-foreground: 231 52% 8%;
+
+    --muted: 269 24% 82%;
+    --muted-foreground: 231 52% 45%;
+
+    --accent: 304 57% 85%;
+    --accent-foreground: 231 52% 8%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 269 24% 82%;
+    --input: 269 24% 82%;
+    --ring: 231 52% 8%;
+
+    --radius: 0.5rem;
+
+    /* Enhanced fashion-specific colors */
+    --deep-navy: 231 52% 8%;        /* #070716 */
+    --lavender: 269 24% 82%;        /* #bbb2ef */
+    --lime-yellow: 74 85% 59%;      /* #d7f337 */
+    --soft-pink: 304 57% 85%;       /* #ffc2f1 */
+    --sage-green: 150 20% 84%;      /* #d4e4e1 */
+    
+    --cream: 45 30% 95%;
+  }
+
+  .dark {
+    --background: 231 52% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 231 52% 8%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 231 52% 8%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 231 52% 8%;
+
+    --secondary: 269 24% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 269 24% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    --accent: 304 57% 20%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 269 24% 15%;
+    --input: 269 24% 15%;
+    --ring: 0 0% 83%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+@layer components {
+  .fashion-gradient {
+    background: linear-gradient(135deg, hsl(var(--cream)), hsl(var(--sage-green)));
+  }
+  
+  .luxury-gradient {
+    background: linear-gradient(135deg, hsl(var(--deep-navy)), hsl(var(--lavender)));
+  }
+  
+  .accent-gradient {
+    background: linear-gradient(135deg, hsl(var(--soft-pink)), hsl(var(--lime-yellow)));
+  }
+
+  .footer-enhanced {
+    background: linear-gradient(135deg, hsl(var(--deep-navy)), hsl(231 52% 12%));
+  }
+
+  .text-shadow-glow {
+    text-shadow: 0 0 20px rgba(215, 243, 55, 0.3);
+  }
+
+  .hover-lift {
+    transition: all 0.3s ease;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-2px);
+  }
+}
