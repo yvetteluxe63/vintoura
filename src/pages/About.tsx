@@ -206,7 +206,7 @@ const About = () => {
                 }}
               />
               <motion.img
-                src="/public/lovable-uploads/about.jpg"
+                src="/lovable-uploads/about.jpg"
                 alt="Our styling process"
                 className="rounded-lg shadow-xl relative z-10"
                 whileHover={{ scale: 1.05, rotate: 1 }}
